@@ -1,0 +1,16 @@
+{
+  "name": "image-gallery",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "repository": {
+    "type": "git"
+  },
+  "dependencies": {
+    "bower": "~1.3"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  }
+}

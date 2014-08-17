@@ -31,6 +31,7 @@ GEM
     aws-sdk (1.51.0)
       json (~> 1.4)
       nokogiri (>= 1.4.4)
+    bower-rails (0.8.3)
     builder (3.2.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -146,6 +147,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk
+  bower-rails
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
