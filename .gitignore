@@ -4,6 +4,7 @@
 
 /config/database.yml
 
+/public/assets/
 /vendor/assets/
 
 # Ignore all logfiles and tempfiles.
