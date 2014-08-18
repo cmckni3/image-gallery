@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @gallery.name %>
+</p>
+
+<% if @gallery.images.size > 0 %>
+  <ul data-orbit>
+  <% @gallery.images.each do |image| %>
+    <li><%= image_tag image.attachment(:large) %></li>
+  <% end %>
+  </ul>
+<% end %>
+<% if @gallery.images.size == 0 %>
+  <p>No images for this gallery.</p>
+<% end %>

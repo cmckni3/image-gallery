@@ -1,9 +1,13 @@
-<section class="main-section">
-  <div class="row">
-    <div class="large-12 columns">
+<h3>Recent Galleries</h3>
 
-      <h4>Welcome</h4>
-
-    </div>
-  </div>
-</section>
+<div class="row">
+<% @recent_galleries.each do |gallery| %>
+  <% if gallery.images.size > 0 %>
+    <ul data-orbit>
+      <% gallery.images.each do |image| %>
+        <li><%= image_tag image.attachment(:large) %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>
+</div>

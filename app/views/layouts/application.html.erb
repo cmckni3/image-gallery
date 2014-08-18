@@ -15,17 +15,23 @@
     <nav class="top-bar foundation-bar" data-topbar>
       <ul class="title-area">
         <li class="name">
-         <h1><a href="/">Image Gallery</a></h1>
+         <h1><%= link_to "Image Gallery", root_path %></h1>
         </li>
       </ul>
       <section class="top-bar-section">
         <ul>
-          <li><a href="http://foundation.zurb.com/docs/">Galleries</a></li>
+          <li<%= ' class=active' if current_page?(galleries_path) %>><%= link_to "Galleries", galleries_path %></li>
         </ul>
       </section>
     </nav>
 
-    <%= yield %>
+    <section class="main-section">
+      <div class="row">
+        <div class="large-12 columns">
+          <%= yield %>
+        </div>
+      </div>
+    </section>
     <%= javascript_include_tag "application" %>
   </body>
 </html>

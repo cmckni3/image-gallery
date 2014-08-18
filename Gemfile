@@ -12,6 +12,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'bower-rails'
 
 gem 'jquery-rails'
+gem 'jquery-fileupload-rails'
 
 gem 'jbuilder', '~> 2.0'
 

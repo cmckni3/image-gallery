@@ -10,8 +10,25 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
  */
 
 @import "foundation_and_overrides";
+
+table {
+  width: 100%;
+}
+
+.orbit-container .orbit-slides-container img {
+  width: 100%;
+}
+
+#dropzone {
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+#dropzone.hover {
+  background: $primary-color;
+}

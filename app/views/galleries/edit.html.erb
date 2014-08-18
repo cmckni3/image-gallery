@@ -1,0 +1,8 @@
+<h3>Editing gallery</h3>
+
+<%= render 'form' %>
+
+<div id="upload">
+  <div id="dropzone" class="panel">Drop files here</div>
+  <input id="fileupload" data-url="/galleries/<%= @gallery.id %>/images" multiple="" name="image[attachment]" type="file" />
+</div>
