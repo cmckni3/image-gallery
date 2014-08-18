@@ -1,17 +1,19 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Name:</strong>
   <%= @gallery.name %>
 </p>
 
-<% if @gallery.images.size > 0 %>
-  <ul data-orbit>
-  <% @gallery.images.each do |image| %>
-    <li><%= image_tag image.attachment(:large) %></li>
+<div class="row">
+  <% if @gallery.images.size > 0 %>
+    <div class="large-6 columns">
+      <ul data-orbit>
+      <% @gallery.images.each do |image| %>
+        <li><%= image_tag image.attachment(:large) %></li>
+      <% end %>
+      </ul>
+    </div>
   <% end %>
-  </ul>
-<% end %>
-<% if @gallery.images.size == 0 %>
-  <p>No images for this gallery.</p>
-<% end %>
+  <% if @gallery.images.size == 0 %>
+    <p>No images for this gallery. <%= link_to "Please upload some.", edit_gallery_path(@gallery) %></p>
+  <% end %>
+</div>

@@ -5,7 +5,7 @@ class Image < ActiveRecord::Base
     thumb: '100x100>',
     square: '200x200#',
     medium: '300x300>',
-    large: '1000x300#'
+    large: '900x300>',
   }
 
   validates_attachment_content_type :attachment, content_type: /\Aimage\/.*\Z/
