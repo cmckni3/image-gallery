@@ -20,7 +20,7 @@
       </ul>
       <section class="top-bar-section">
         <ul>
-          <li<%= ' class=active' if current_page?(galleries_path) %>><%= link_to "Galleries", galleries_path %></li>
+          <li<%= ' class=active' if controller.controller_name == 'galleries' %>><%= link_to "Galleries", galleries_path %></li>
         </ul>
       </section>
     </nav>
