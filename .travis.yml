@@ -1,7 +1,11 @@
 language: ruby
+services: postgresql
+env:
+  - RAILS_ENV=test DATABASE_URL=postgres://localhost:5432/travis_ci_test
 before_script:
   - bundle install
   - npm install
+  - psql -c 'create database travis_ci_test;' -U postgres
 script:
   - bundle exec rake test
   - npm test
