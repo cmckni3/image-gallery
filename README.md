@@ -1,5 +1,7 @@
 # Image Gallery Rails Application
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cmckni3/image-gallery.svg)](https://greenkeeper.io/)
+
 ## Requirements
 
 * ImageMagick
