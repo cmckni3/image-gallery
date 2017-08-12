@@ -1,0 +1,7 @@
+language: ruby
+before_script:
+  - bundle install
+  - npm install
+script:
+  - bundle exec rake test
+  - npm test
