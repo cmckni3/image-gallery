@@ -6,7 +6,7 @@
     "test": "exit 0"
   },
   "dependencies": {
-    "foundation-sites": "^5.5.2",
+    "foundation-sites": "^6.4.4-rc1",
     "modernizr": "^3.5.0"
   },
   "engines": {
