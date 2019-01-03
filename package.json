@@ -12,10 +12,5 @@
   "engines": {
     "node": ">= 4",
     "npm": ">= 3.x"
-  },
-  "greenkeeper": {
-    "ignore": [
-      "foundation-sites"
-    ]
   }
 }
