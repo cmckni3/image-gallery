@@ -1,6 +1,7 @@
 {
   "extends": [
-    "github>cmckni3/renovate-config"
+    "github>cmckni3/renovate-config",
+    ":assignee(cmckni3)"
   ],
   "ignoreDeps": [
     "foundation-sites"
