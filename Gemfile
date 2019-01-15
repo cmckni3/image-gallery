@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.0'
+gem 'rails', '5.0.7.1'
 # gem 'webpacker', '~> 3.5'
 
 gem 'pg', '~> 0.18.0'
@@ -25,7 +25,7 @@ end
 
 group :test do
   gem 'minitest', '5.10.1'
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.1'
 end
 
 group :production do
