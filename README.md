@@ -1,12 +1,10 @@
 # Image Gallery Rails Application
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/cmckni3/image-gallery.svg)](https://greenkeeper.io/)
-
 ## Requirements
 
 * ImageMagick
-* Ruby 2.1.2
-* Rails 4.1.4
+* Ruby 2.3.8
+* Rails 5.0
 
 ## Setup
 
@@ -22,16 +20,4 @@ cp .env.example .env
 
 ```bash
 bundle install
-```
-
-* Install foreman
-
-```bash
-gem install foreman
-```
-
-* Run foreman
-
-```bash
-foreman start
 ```

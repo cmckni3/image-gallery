@@ -18,30 +18,30 @@ class GalleriesControllerTest < ActionController::TestCase
 
   test "should create gallery" do
     assert_difference('Gallery.count') do
-      post :create, gallery: { name: @gallery.name }
+      post :create, params: { gallery: { name: @gallery.name } }
     end
 
     assert_redirected_to gallery_path(assigns(:gallery))
   end
 
   test "should show gallery" do
-    get :show, id: @gallery
+    get :show, params: { id: @gallery }
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @gallery
+    get :edit, params: { id: @gallery }
     assert_response :success
   end
 
   test "should update gallery" do
-    patch :update, id: @gallery, gallery: { name: @gallery.name }
+    patch :update, params: { id: @gallery, gallery: { name: @gallery.name } }
     assert_redirected_to gallery_path(assigns(:gallery))
   end
 
   test "should destroy gallery" do
     assert_difference('Gallery.count', -1) do
-      delete :destroy, id: @gallery
+      delete :destroy, params: { id: @gallery }
     end
 
     assert_redirected_to galleries_path
