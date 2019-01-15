@@ -23,6 +23,10 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'rails-controller-testing'
+end
+
 group :production do
   gem 'unicorn', '>= 4.8.3'
   gem 'rails_12factor'
