@@ -1,16 +1,16 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.7.1'
+gem 'rails', '5.0.7.2'
 # gem 'webpacker', '~> 3.5'
 
 gem 'pg', '~> 0.18.0'
 
-gem 'sass-rails', '~> 5.0.6'
+gem 'sass-rails', '~> 5.0.7'
 gem 'uglifier', '>= 2.7.2'
 gem 'coffee-rails', '~> 4.1.1'
 
-gem 'jquery-rails', '>= 4.0.1'
-gem 'jquery-fileupload-rails', '>= 0.4.1'
+gem 'jquery-rails', '>= 4.3.3'
+gem 'jquery-fileupload-rails', '>= 1.0.0'
 
 gem 'jbuilder', '~> 2.1', '>= 2.1.3'
 
@@ -25,7 +25,7 @@ end
 
 group :test do
   gem 'minitest', '5.10.1'
-  gem 'rails-controller-testing', '>= 1.0.1'
+  gem 'rails-controller-testing', '>= 1.0.4'
 end
 
 group :production do
