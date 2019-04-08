@@ -12,7 +12,6 @@
 #
 #= require jquery
 #= require jquery_ujs
-#= require modernizr
 #= require foundation-sites
 #= require jquery-fileupload/basic
 #= require_tree .
