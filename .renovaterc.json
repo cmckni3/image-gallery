@@ -5,6 +5,7 @@
   ],
   "labels": ["chore"],
   "ignoreDeps": [
-    "foundation-sites"
+    "foundation-sites",
+    "ruby"
   ]
 }
