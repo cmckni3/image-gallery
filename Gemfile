@@ -5,7 +5,7 @@ gem 'rails', '5.0.7.2'
 
 gem 'pg', '~> 0.18.0'
 
-gem 'sass-rails', '~> 5.0.7'
+gem 'sass-rails', '~> 5.1.0'
 gem 'uglifier', '>= 2.7.2'
 gem 'coffee-rails', '~> 4.1.1'
 
