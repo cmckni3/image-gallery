@@ -6,6 +6,8 @@
   "labels": ["chore"],
   "ignoreDeps": [
     "foundation-sites",
-    "ruby"
+    "pg",
+    "ruby",
+    "sdoc"
   ]
 }
