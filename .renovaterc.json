@@ -5,9 +5,11 @@
   ],
   "labels": ["chore"],
   "ignoreDeps": [
+    "coffee-rails",
     "foundation-sites",
     "pg",
     "ruby",
+    "sass-rails",
     "sdoc"
   ]
 }
