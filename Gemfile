@@ -33,4 +33,4 @@ group :production do
   gem 'rails_12factor'
 end
 
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 1.0.0', group: :doc
