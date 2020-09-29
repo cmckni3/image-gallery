@@ -9,7 +9,7 @@ gem 'sass-rails', '~> 5.0.7'
 gem 'uglifier', '>= 2.7.2'
 gem 'coffee-rails', '~> 4.1.1'
 
-gem 'jquery-rails', '>= 4.3.3'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'jquery-fileupload-rails', '>= 1.0.0'
 
 gem 'jbuilder', '~> 2.1', '>= 2.1.3'
