@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.7.2'
+gem 'rails', '6.0.3.5'
 # gem 'webpacker', '~> 3.5'
 
 gem 'pg', '~> 0.18.0'
