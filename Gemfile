@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.7.2'
+gem 'rails', '6.0.3.5'
 # gem 'webpacker', '~> 3.5'
 
 gem 'pg', '~> 0.18.0'
 
-gem 'sass-rails', '~> 5.0.7'
+gem 'sass-rails', '~> 5.0.8'
 gem 'uglifier', '>= 2.7.2'
-gem 'coffee-rails', '~> 4.1.1'
+gem 'coffee-rails', '~> 4.2.2'
 
 gem 'jquery-rails', '>= 4.4.0'
 gem 'jquery-fileupload-rails', '>= 1.0.0'
