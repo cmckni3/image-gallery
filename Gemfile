@@ -17,7 +17,7 @@ gem 'jbuilder', '~> 2.1', '>= 2.1.3'
 gem 'paperclip', '>= 5.2.1'
 gem 'aws-sdk', '>= 1.51.0'
 
-gem 'puma', '>= 4.3.5'
+gem 'puma', '>= 4.3.9'
 
 group :development do
   gem 'spring'
