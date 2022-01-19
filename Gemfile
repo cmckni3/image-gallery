@@ -24,7 +24,7 @@ group :development do
 end
 
 group :test do
-  gem 'minitest', '5.14.3'
+  gem 'minitest', '5.15.0'
   gem 'rails-controller-testing', '>= 1.0.4'
 end
 
