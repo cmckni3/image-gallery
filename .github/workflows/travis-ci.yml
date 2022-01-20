@@ -1,0 +1,49 @@
+name: CI
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4.1.0
+    - run: gem install bundler
+    - run: bundle install --jobs=3 --retry=3
+    - run: npm install
+    - run: psql -c 'create database travis_ci_test;' -U postgres
+    - run: bundle exec rake test
+    - run: npm test
+    strategy:
+      matrix:
+        include:
+        - RAILS_ENV: test
+          DATABASE_URL: postgres://localhost:5432/travis_ci_test
+    services:
+      postgresql:
+        image: postgres
+    env:
+      RAILS_ENV: "${{ matrix.RAILS_ENV }}"
+      DATABASE_URL: "${{ matrix.DATABASE_URL }}"
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      # Add or replace any other lints here
+      - name: Security audit dependencies
+        continue-on-error: true
+        run: bin/bundler-audit --update
+      - name: Security audit application code
+        continue-on-error: true
+        run: bin/brakeman -q -w2
+      - name: Lint Ruby files
+        run: bin/rubocop --parallel
