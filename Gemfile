@@ -1,4 +1,7 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
+
+gem 'psych', '< 4'
 
 gem 'rails', '5.2.4.6'
 # gem 'webpacker', '~> 3.5'
@@ -19,6 +22,10 @@ gem 'aws-sdk', '>= 1.51.0'
 
 gem 'puma', '>= 4.3.9'
 
+gem 'brakeman', require: false
+gem 'bundler-audit', require: false
+gem 'rubocop', require: false
+
 group :development do
   gem 'spring'
 end
@@ -29,8 +36,6 @@ group :test do
 end
 
 group :production do
-  gem 'unicorn', '>= 4.8.3'
   gem 'rails_12factor'
+  gem 'unicorn', '>= 4.8.3'
 end
-
-gem 'sdoc', '~> 1.0.0', group: :doc
